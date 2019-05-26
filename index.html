@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style2.css">
+  <link rel="stylesheet" href="Recepty.html">
+  <link rel="stylesheet" href="Pobocky.html">
+  <link rel="shortcut icon" href="/img/222.png" type="image/png">
+  <title>FoFoBurger</title>
+  <script>
+  document.write('<style type="text/css">');
+  var cname='perar';
+  var cookies = document.cookie;
+  var display='none';
+  var pos1 = cookies.indexOf(escape(cname) + '=');
+  if (pos1 != -1)
+  {
+    pos1 = pos1 + (escape(cname) + '=').length;
+    pos2 = cookies.indexOf(';', pos1);
+    if (pos2 == -1)
+      pos2 = cookies.length;
+    display = cookies.substring(pos1, pos2);
+  }
+  document.write('#boss { display: '+display+"; }");
+  document.write('</style>');
+  $(document).ready(function() {
+    $( "#rezervace" ).click(function() {
+      if($("#boss").css("display") != 'none')
+      {
+        $("#boss").animate({height: '0'}, function() {$("#boss").hide();});
+        document.cookie='perar='+escape('none');
+      }
+      else
+      {
+        $("#boss").animate({height: '65'});
+        $("#boss").show();
+        document.cookie='perar='+escape('block');
+      }
+    });
+  });
+  </script>
+</head>
+<body>
+  <header>
+  <div class="main">
+    <div id="header">
+      <div class="main-menu">
+        <nav>
+          <ul>
+            <li><a class="menu" href="#">Main</a></li>
+            <li><a class="menu" href="#zag">Abaut</a></li>
+            <li><a class="menu" href="#zag2">Menu</a></li>
+            <li><a class="menu" href="#rezervace">Rezervace</a></li>
+            <li><a class="menu" href="#Prace">Info</a></li>
+         </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+
+  <div class="zagolovok">
+    <div class="popo">
+      <a href=""><img src="img/logo.jpg" alt="logo"></a>
+    </div>
+  </div>
+</header>
+  <section id="zag"> <h1>Abaut</h1></section>
+      <section class="Abaut">
+        <div class="text"><img src="img/nn.jpg"   alt="a"><h1>O nas</h1><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores fugit dolor incidunt, perferendis qui accusamus impedit porro ipsum.</p></div>
+        <div class="text"><img src="img/sama.jpg" alt="a"><h1>Atmosfera</h1><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium placeat architecto sunt, commodi! Repellendus autem illum, odio nisi.</p></div>
+        <div id="del" class="text"><img src="img/volo.jpg" alt="a"><h1>Nase restik</h1><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis maxime asperiores eius, ipsa quas reiciendis quos mollitia assumenda.</p></div>
+      </section>
+
+
+
+<div class="wrapper">
+
+    <section class="okoffe">
+      <div id="zag2"><h1>Menu</h1></div>
+          <div class="munuseznam">
+
+          <div class="cto">
+            <img src="img/222.png" alt="">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui quia quo, dolore beatae mollitia sit. Expedita doloremque, minus?</p>
+          </div>
+
+          <div class="cto">
+            <img src="img/222.png" alt="">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui quia quo, dolore beatae mollitia sit. Expedita doloremque, minus?</p>
+          </div>
+
+          <div class="cto">
+            <img src="img/222.png" alt="">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui quia quo, dolore beatae mollitia sit. Expedita doloremque, minus?</p>
+          </div>
+
+          <div class="cto">
+            <img src="img/222.png" alt="">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui quia quo, dolore beatae mollitia sit. Expedita doloremque, minus?</p>
+          </div>
+
+          <div class="cto">
+            <img src="img/222.png" alt="">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui quia quo, dolore beatae mollitia sit. Expedita doloremque, minus?</p>
+          </div>
+
+          <div class="cto">
+            <img src="img/222.png" alt="">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui quia quo, dolore beatae mollitia sit. Expedita doloremque, minus?</p>
+          </div>
+
+          <div class="cto">
+            <img src="img/222.png" alt="">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui quia quo, dolore beatae mollitia sit. Expedita doloremque, minus?</p>
+          </div>
+
+          <div class="cto">
+            <img src="img/222.png" alt="">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui quia quo, dolore beatae mollitia sit. Expedita doloremque, minus?</p>
+          </div>
+        </div>
+      </section>
+
+      <div id="actual">
+          <button id="rezervace">
+              <b>Rezervace</b>
+          </button>
+          <div id="boss">
+              <div class="addrr">
+                <address>
+                    <strong>FoFoBurger</strong><br>
+                    Božetěchova 1/2, 612 00 <br>
+                    <abbr title="Phone">P:</abbr> (123) 456-7890
+                    <abbr title="email"></abbr> (oppoa123@gmail.com)
+                </address>
+              </div>
+          </div>
+      </div>
+
+
+      <div class="mapa">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2605.6260038546898!2d16.594451415421943!3d49.22661948266284!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471294099dc06bbb%3A0xbfcf161b01a48b0d!2z0KTQsNC60YPQu9GM0YLQtdGCINCY0L3RhNC-0YDQvNCw0YbQuNC-0L3QvdGL0YUg0KLQtdGF0L3QvtC70L7Qs9C40LksINCi0LXRhdC90LjRh9C10YHQutC40Lkg0KPQvdC40LLQtdGA0YHQuNGC0LXRgiDQkdGA0L3Qvg!5e0!3m2!1sru!2scz!4v1555175777633!5m2!1sru!2scz"></iframe>
+      </div>
+
+
+    <footer class="footer" >
+       <section id="Prace">
+         <div class="teeext"><h1>Hledate prace?</h1>
+          <p><a href="Prace.html">Nasi predlozenia</a></p>
+         </div>
+       </section>
+       <section id="Kontakty">
+         <div class="teeext"><h1>Сhcete se nás zeptat?</h1>
+          <p><a href="Pobocky.html">Nashi kontakty</a></p>
+         </div>
+       </section>
+       <section id="Novinky">
+         <div class="teeext"><h1>Novinky v restike</h1>
+          <p><a href="Recepty.html">Menu</a></p>
+         </div>
+       </section>
+</footer>
+</div>
+</body>
+</html>

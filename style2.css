@@ -1,0 +1,382 @@
+/* SETTINGS */
+body {
+  margin:0;
+  padding: 0;
+  font-family: arial, sans-serif;
+}
+a {
+    text-decoration: none;
+  color: white;
+}
+a:hover {
+    color: #F0B130;
+}
+ul {
+  list-style-type: none;
+}
+/* MEDIA */
+
+@media print {
+
+  div.main, div#rezervace,div.footer {
+    display: none;
+  }
+
+#del {
+  display: none;
+}
+
+}
+@media screen and (max-width: 600px)  {
+
+.main-menu {
+  border: 1px solid rgba(0,0,0,0.6);
+  background-color: rgba(0,0,0,0.6);
+}
+}
+@media screen and (max-width: 1380px)  {
+  .lidi {
+    height: 900px;
+  }
+  #oprace {
+    margin-top: 400px;
+
+  }
+ }
+ @media screen and (max-width: 920px)  {
+   #oprace {
+     margin-top: 900px;
+
+   }
+  }
+
+@media screen and (max-width: 962px)  {
+.Abaut {
+  margin-bottom: 250px;
+
+}
+.okoffe {
+  margin-bottom: 400px;
+}
+.wrapper {
+  background-color:#F9F1E5;
+}
+}
+@media screen and (max-width: 636px)  {
+.Abaut {
+  margin-bottom: 690px;
+}
+.okoffe {
+  margin-bottom: 1500px;
+}
+.munuseznam {
+  margin-left: 135px;
+}
+}
+@media screen and (max-width: 660px){
+  .main-menu li {
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+}
+}
+@media screen and (max-width:452px) {
+  .munuseznam {
+    margin-left: 60px;
+  }
+}
+@media screen and (max-width:375px) {
+  .munuseznam {
+    margin-left: -10px;
+  }
+}
+@media screen and (min-width: 1900px) {
+  .Abaut {
+    margin-bottom: -500px;
+  }
+  .okoffe {
+    margin-bottom: -350px;
+  }
+  #rezervace {
+    margin-bottom: -200px;
+  }
+  .footer {
+    margin-top: -200px;
+  }
+}
+
+/* background */
+.main {
+  background: url(img/bgg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  background-color: #464646;
+  height:100vh;
+  width: 100%;
+}
+/* HEADER */
+#header {
+  /* border: 1px solid yellow; */
+  height: 60px;
+  width: 100%;
+  position: fixed;
+  background-color: rgba(0,0,0,0.6);
+}
+.main-menu{
+  float: right;
+  padding-right: 150px;
+
+}
+.main-menu li {
+  display: flex;
+  justify-content: space-between;
+  display: inline;
+  font-size: 20px;
+  padding-left: 40px
+
+}
+/* ZAGOLOVOK */
+.zagolovok{
+  font-size: 30px;
+  text-align: center;
+  width: 100%;
+  max-height: 300px;
+  margin-top: -400px;
+  color: white;
+  border-top: 4px solid white;
+  border-bottom: 4px solid white;
+  background-color: rgba(0,0,0,0.3);
+
+
+}
+.popo img{
+  width: 300px;
+  height: 300px;
+}
+/* ABAUT */
+#zag {
+  text-align: center;
+  width: 100%;
+  height: 100px;
+  margin-top: 183px;
+  padding-top: 30px;
+}
+.Abaut {
+  height: 100vh;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat( auto-fit, minmax(315px, 1fr) );
+  grid-column-gap: 8px;
+  text-align: center;
+  margin-top:0px;
+
+}
+.Abaut img {
+  width: 300px;
+  height: 200px;
+}
+.Abaut div {
+  padding-top: 100px;
+}
+/* Menu */
+
+.okoffe {
+  background-color: #f9f1e5;
+  width: 100%;
+  height: 100vh;
+}
+.munuseznam {
+  display: grid;
+  grid-template-columns: repeat( auto-fit, minmax(315px, 1fr));
+  grid-column-gap: 8px;
+}
+.cto {
+  margin-left: 25px;
+  margin-top: 50px;
+  border: 1px solid black;
+  background-color: white;
+  color: black;
+  border-radius: 25px;
+  width: 300px;
+  height: 200px;
+  text-align: center;
+}
+.cto img {
+  margin-top: 10px;
+  width: 50px;
+  height: 50px;
+}
+#zag2 {
+  text-align: center;
+  padding-top:25px;
+}
+
+
+/* REZERVACE */
+#rezervace {
+  width: 100%;
+  height: 50vh;
+  text-align: center;
+  background: url(img/terassa.jpg);
+  background-size: cover;
+  background-position: top;
+  background-attachment: fixed;
+}
+.rezervace a {
+
+  font-size: 30px;
+  font-weight: bold;
+  color: black;
+  text-decoration: none;
+  padding: .5em 2em;
+  outline: none;
+  border-width: 2px 0;
+  border-style: solid none;
+  border-color: #FDBE33 #000 #D77206;
+  border-radius: 25px;
+  background: linear-gradient(#F3AE0F, #E38916) #E38916;
+  transition: 0.2s;
+}
+.rezervace{
+    padding-top:100px;
+}
+#box {
+  display: none;
+  padding:10px;
+  background-color:#f1f1f1;
+  margin:10px;
+  width:210px;
+  margin: 0 auto;
+  margin-top:30px;
+}
+/* MAPA */
+.mapa {
+  width: 100%;
+  height: 50vh;
+  background-color: #f9f1e5;
+
+}
+iframe {
+  width: 100%;
+  height: 400px;
+}
+#map {
+  margin: 0 auto;
+}
+/* FOOTER */
+.footer {
+  width: 100%;
+  height: 330px;
+  background-color: #000000;
+  padding-top: 30px;
+}
+#otver {
+  padding-left: 30px;
+  float: left;
+}
+/* #najde {
+  float: left;
+  text-align: center;
+  margin-left: 30px
+}
+#hledate {
+  float: left;
+  text-align: center;
+  margin-left: 30px
+}
+#hledate a{
+  color: black;
+} */
+#Prace, #Kontakty, #Novinky {
+  color: white;
+  border: 1px solid white;
+  padding-left: 20px;
+}
+
+/* 2STRANAKA */
+.zagolovok2 {
+text-align: center;
+margin-top: -500px;
+border-top: 4px solid white;
+border-bottom: 4px solid white;
+background-color: rgba(0,0,0,0.3);
+color: white;
+width: 100%;
+}
+
+#hb {
+  width: 100%;
+  height: 200px;
+  margin-top: 100px;
+  text-align: center;
+}
+#hob {
+  width: 100%;
+  height: 100px;
+  margin-top: 200px;
+  text-align: center;
+  font-size: 30px;
+}
+#stran {
+  width: 100%;
+  height: 300px;
+}
+.contact {
+  text-align: center;
+  font-size: 30px;
+}
+
+
+/* PRACE */
+.lidi {
+  width: 100%;
+  height: 600px;
+  background-color: #f9f1e5;
+}
+.lidi img {
+  height: 300px;
+  width: 300px;
+}
+#fig1,#fig2,#fig3 {
+  float: left;
+  padding-left: 80px;
+  margin-top: 100px;
+  display: block;
+  text-align: center;
+}
+#oprace {
+  text-align: center;
+  border: 1px solid black;
+}
+
+
+
+
+
+#rezervace {
+  width: 100%;
+  font-size: 30px;
+  font-weight: bold;
+  color: black;
+  text-decoration: none;
+  padding: .5em 2em;
+  outline: none;
+  border-width: 2px 0;
+  border-style: solid none;
+  border-color: #FDBE33 #000 #D77206;
+  background: linear-gradient(#F3AE0F, #E38916) #E38916;
+  transition: 0.2s;
+  height: 140px
+}
+
+#rezervace:hover {
+    cursor: pointer;
+}
+
+#boss  {
+  padding-top: 10px;
+  background-color: grey;
+  text-align: center;
+
+}
